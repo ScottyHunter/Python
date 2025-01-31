@@ -1,0 +1,29 @@
+print("Hello world!")
+
+print("Hello world!\nHello world!\nHello world")
+
+print("Hello" + " " + "Scotty")
+
+print("Hello " + input("What is your name?"))
+
+# This is a comment. This line will take an input from the user with the input() function.
+print("Hello " + input("What is your name?") + "!")
+
+name = input("What is your name?")
+print(name)
+
+name = input("What is your name?")
+print(len(name))
+
+print(len(input("What is your name?")))
+
+username = input("What is your name?")
+length = str(len(username))
+print("Your name is " + username + " and your name is " + length + " characters long")
+
+glass1 = "milk"
+glass2 = "juice"
+
+glass3 = glass1
+glass1 = glass2
+glass2 = glass3
