@@ -1,0 +1,11 @@
+print("What is your Body Mass Index (BMI)?")
+
+height = input("What is your height in inches: ")
+weight = input("What is your weight in pounds: ")
+
+converted_height = int(height)
+converted_weight = int(weight)
+
+bmi = converted_weight / (converted_height**2) * 703
+
+print("Your BMI is: " + str(bmi))
