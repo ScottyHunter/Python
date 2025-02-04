@@ -1,0 +1,46 @@
+print('''
+****************************************************************
+   _________________________________________________________
+ /|     -_-                                             _-  |\
+/ |_-_- _                                         -_- _-   -| \   
+  |                            _-  _--                      | 
+  |                            ,                            |
+  |      .-'````````'.        '(`        .-'```````'-.      |
+  |    .` |           `.      `)'      .` |           `.    |          
+  |   /   |   ()        \      U      /   |    ()       \   |
+  |  |    |    ;         | o   T   o |    |    ;         |  |
+  |  |    |     ;        |  .  |  .  |    |    ;         |  |
+  |  |    |     ;        |   . | .   |    |    ;         |  |
+  |  |    |     ;        |    .|.    |    |    ;         |  |
+  |  |    |____;_________|     |     |    |____;_________|  |  
+  |  |   /  __ ;   -     |     !     |   /     `'() _ -  |  |
+  |  |  / __  ()        -|        -  |  /  __--      -   |  |
+  |  | /        __-- _   |   _- _ -  | /        __--_    |  |
+  |__|/__________________|___________|/__________________|__|
+ /                                             _ -        lc \
+/   -_- _ -             _- _---                       -_-  -_ \
+
+****************************************************************
+''')
+
+print("Welcome to Dungeon Delver.")
+print("Your mission is to find the treasure.")
+choice1 = input('You enter the dungeon. The pungent stench of mildew eminates from the wet dungeon walls. You are at a crossroad, where do you want to go? Type "left" or "right".').lower()
+
+if choice1 == "left":
+    choice2 = input('You come to a stream running through the dungeon. There is an island with three different colored torches. Type "wait" to wait for a boat or type "swim" to try and swim across').lower()
+    if choice2 == "wait":
+        choice3 = input('You arrive at the island. There are three torches emitting different colors: one red, one yellow, and one green. Which color do you choose?').lower()
+        if choice3 == "red":
+            print("A massive ball of fire shoots down from the inside of the cavern, engulfing you in flames. Game Over.")
+        elif choice3 == "yellow":
+            print("The island raises from the water and changes into a horde of treasure. You Win!")
+        elif choice3 == "green":
+            print("The torches spit out a putrid green vapor that envelopes you, melting your armor, weapons, and anything exposed. Game Over.")
+        else:
+            print("You chose no torch, you sit and wait but no boat comes for you. You waste away and starve. Game Over.")
+    else:
+        print("You get attacked by a pack of feral lobsters. Game Over.")
+else:
+    print("You trigger a trap that pushes you into a pit of spikes. Game Over.")
+    
