@@ -1,0 +1,12 @@
+print("Welcome to the Dungeon")
+print("Try and survive! Your fortune awaits you!")
+print("You enter the dungeon, there are torches that cast an eerie glow on the damp stone beneath your feet.")
+print("There are two openings, one to your east which is where you entered, and one to the north.")
+
+choice1 = input("Where do you go? Type north to go further in, or exit to leave.").lower()
+if choice1 == "north":
+    choice2 = input("You come to a much larger room that has four enterances: south will take you back to the room you were previously in. Choose north, east, or west to continue forward.")
+elif choice1 == "exit":
+    print("You turn and leave the dungeon. Massive stone doors slam shut, locking you out.")
+else:
+    print("Make a better choice, fool.")
